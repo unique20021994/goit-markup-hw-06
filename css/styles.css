@@ -519,7 +519,7 @@ body {
 }
 .subscribe {
   margin-top: 12px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 .subsribe-list {
   display: flex;
@@ -736,8 +736,8 @@ fill:var(--accent-color);
 
 /* Form */
 .form {
-  margin: 40px;
-  width: 448px;
+  padding: 40px;
+  
 }
 .modal-title {
   font-weight: 700;
@@ -813,12 +813,15 @@ fill:var(--accent-color);
   display: inline-block;
   width: 16px;
   height: 15px;
-  background: var(--accent-color);
   border-radius: 2px;
-  margin-right: 7px;
+  margin-right: 8.38px;
+  border: 2px solid #212121;
 }
 .checkbox-icon {
   opacity: 0;
+  background: var(--accent-color);
+  
+  
 }
 .checkbox {
   display: flex;
@@ -828,6 +831,10 @@ fill:var(--accent-color);
 .policy:checked ~ .policy-text .checkbox-icon {
   opacity: 1;
   background-size: contain;
+}
+.policy:checked ~.policy-text .checkbox-wrap {
+ border-color: var(--accent-color);
+ background-color: var(--accent-color);
 }
 
 .policy-text {
