@@ -694,6 +694,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-duration) var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -727,17 +728,17 @@ body {
   background-color: var(--color-button);
   cursor: pointer;
 }
-.icon-close{
+.icon-close {
   transition: fill var(--transition-duration) var(--timing-function);
 }
-.icon-close:hover, icon-close:focus {
-fill:var(--accent-color);
+.icon-close:hover,
+icon-close:focus {
+  fill: var(--accent-color);
 }
 
 /* Form */
 .form {
   padding: 40px;
-  
 }
 .modal-title {
   font-weight: 700;
@@ -820,8 +821,6 @@ fill:var(--accent-color);
 .checkbox-icon {
   opacity: 0;
   background: var(--accent-color);
-  
-  
 }
 .checkbox {
   display: flex;
@@ -832,9 +831,9 @@ fill:var(--accent-color);
   opacity: 1;
   background-size: contain;
 }
-.policy:checked ~.policy-text .checkbox-wrap {
- border-color: var(--accent-color);
- background-color: var(--accent-color);
+.policy:checked ~ .policy-text .checkbox-wrap {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .policy-text {
